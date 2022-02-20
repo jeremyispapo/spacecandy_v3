@@ -1,0 +1,42 @@
+.card {
+	/* width: 45%; */
+	background-color: #fff;
+	border-radius: .5rem;
+	padding: .5rem;
+}
+
+.card__figure {
+	height:15rem;
+	background-color: #31435e;
+	border-radius: .5rem;
+	border: .3rem solid #233249;
+	position:relative;
+}
+
+.card__price {
+	position:absolute;
+	display: block;
+	background-color: #223249;
+	bottom: 0;
+	right: 0;
+	font-weight: bold;
+	color: #fff;
+	padding-inline: .4rem;
+	border-radius: .5rem 0 0 0;
+}
+
+.card__content {
+	display: flex;
+	flex-direction: column;
+	gap: .4rem;
+}
+
+.card__button {
+	width: 100%;
+	font-size: 1.2rem;
+	padding: .4rem;
+	background-color: #223249;
+	color: #fff;
+	border: none;
+	border-radius: .5rem;
+}

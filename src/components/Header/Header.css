@@ -1,0 +1,28 @@
+.header {
+	background-color: #fff;
+}
+
+.navbar {
+	padding-inline: 2rem;
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+	padding-block: 1.5rem;
+}
+
+.carrito {
+	font-size: 3rem;
+	position: relative;	
+}
+
+.carrito.active:before {
+	content: "";
+	display: block;
+	width: 1.5rem;
+	height: 1.5rem;
+	background-color: red;
+	position: absolute;
+	border-radius: 50%;
+	left: 0;
+	top: .2rem
+}

@@ -1,0 +1,10 @@
+.store {
+	padding: 2rem
+}
+.store__wrapper {
+	padding: 2rem;
+	background-color: #ffffff25;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: .8rem;
+}

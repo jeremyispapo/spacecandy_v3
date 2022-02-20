@@ -1,0 +1,72 @@
+.admin__wrapper {
+	background-color: #ffffff25;
+	padding: 2rem;
+	margin:2rem
+}
+
+.admin__create {
+	background-color: #142e4c ;
+	padding: 2rem;
+	display: grid;
+}
+
+.admin__title {
+	color: #fff;
+	text-align: center;
+	font-size: 1.8rem;
+	margin-block-end: 2rem;
+}
+
+
+.form__title {
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.form__section {
+	display: block;
+	margin-block-end: 2rem;
+}
+
+.form__input-default {
+	padding: .4rem;
+	font-size: 1.8rem;
+	font-weight: bold;
+	width: 100%;
+	border-radius: .5rem;
+	border: 3px solid #0c1c2e;
+}
+
+.form__textarea {
+	padding: .4rem;
+	border:3px solid #0c1c2e;
+	border-radius: .5rem;
+	width: 100%;
+	height:5rem;
+	resize: none;
+}
+
+.btn--create {
+	background-color: #efefef;
+	padding: .8rem;
+	border: none;
+	border-radius: .5rem;
+	font-weight: bold;
+}
+
+.preview__candy {
+	margin-block-start: 2rem;
+	width: 100%;
+	height: 20rem;
+	background-color: #fff;
+	border-radius: .5rem;
+	border: 3px solid #0c1c2e
+}
+
+.btn--create.link {
+	display: inline-block;
+	margin-block-start: 2rem;
+	text-decoration: none;
+	color: #000;
+	justify-self: center;
+}
