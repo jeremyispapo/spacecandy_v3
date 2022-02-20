@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import {Header} from './components/Header/Header'
 
@@ -8,7 +8,7 @@ import {Store} from './components/Store/Store'
 import './App.css'
 
 function App() {
-	return (
+		return (
 		<>
 			<Header />
 			<BrowserRouter>

@@ -60,7 +60,11 @@
 	height: 20rem;
 	background-color: #fff;
 	border-radius: .5rem;
-	border: 3px solid #0c1c2e
+	border: 3px solid #0c1c2e;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-block: 4rem;
 }
 
 .btn--create.link {
@@ -69,4 +73,9 @@
 	text-decoration: none;
 	color: #000;
 	justify-self: center;
+}
+
+.preview__candy svg {
+	/* width: 100%; */
+	height: 90%;
 }
