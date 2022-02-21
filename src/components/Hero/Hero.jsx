@@ -15,6 +15,10 @@ export const Hero = () => {
 				<Link to="/store" className="btn">Comprar Caramelo 💵</Link>
 			</div>
 		</div>
+		<section className="use">
+			<h2 className="hero__title section__title">¿Como usar?</h2>
+			<p></p>
+		</section>
 	</main>
   )
 }
