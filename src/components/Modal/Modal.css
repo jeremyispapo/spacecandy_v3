@@ -5,6 +5,7 @@
 	min-height: 12rem;
 	right:0;
 	border-radius: 0 0 0 1rem;
+	z-index: 3;
 }
 
 @media (min-width: 768px) {

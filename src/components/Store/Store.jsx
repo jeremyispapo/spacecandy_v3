@@ -2,7 +2,7 @@ import React from 'react'
 import './Store.css'
 import {Card} from '../Card/Card'
 
-export const Store = ({candys, setCarrito}) => {
+export const Store = ({candys, setCarrito,carrito}) => {
 
   return (
 	<main className='store'>
@@ -16,6 +16,7 @@ export const Store = ({candys, setCarrito}) => {
 						color={candy.color}
 						type={candy.type}
 						key={i}
+						carrito={carrito}
 						setCarrito={setCarrito}
 						/>
 				))
