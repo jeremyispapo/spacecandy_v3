@@ -1,7 +1,6 @@
 import React from 'react'
 
 const RenderCandy = ({type, color}) => {
-		console.log(type)
 
   return (
 	<>

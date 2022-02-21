@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import {RenderCandy} from '../../utils/renderCandy'
 import './Admin.css'
 
-export const Admin = () => {
+export const Admin = ({candys,setCandys}) => {
 
 	function createCandy({name,color,type,power,price}) {
 		const newCandy = {
@@ -13,17 +13,12 @@ export const Admin = () => {
 			power,
 			price
 		}
-		candyCreates.push(newCandy)
-		console.log(candyCreates)
-		setNombreCandy('')
-		setColorCandy('')
-		setTypeCandy('')
-		setPowerCandy('')
-		setPriceCandy('')
+		candys.push(newCandy)
+		setCandys(candys)
+		console.log(candys)
 	}
 
 
-	const candyCreates = []
 	const [nombreCandy, setNombreCandy] = useState('')
 	const [colorCandy, setColorCandy] = useState('')
 	const [typeCandy, setTypeCandy] = useState('0')

@@ -8,14 +8,27 @@ import {Store} from './components/Store/Store'
 import './App.css'
 
 function App() {
+	const [candys, setCandys] = useState([])
+	
 		return (
 		<>
-			<Header />
 			<BrowserRouter>
+				<Header />
 				<Routes>
 					<Route path="/" element={ <Hero/> } />
-					<Route path="/create-candy" element={ <Admin /> } />
-					<Route path="/store" element={ <Store /> } />
+					<Route path="/create-candy" element={ 
+					
+						<Admin 
+						candys={candys} 
+						setCandys={setCandys}
+						/> 
+					} />
+					<Route path="/store" element={
+						<Store 
+						candys={candys}
+						setCandys={setCandys}
+						/>
+					} />
 				</Routes>
 			</BrowserRouter>
 		</>
