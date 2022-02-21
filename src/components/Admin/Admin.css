@@ -79,3 +79,39 @@
 	/* width: 100%; */
 	height: 90%;
 }
+
+.msg {
+	position: fixed;
+	background-color: rgb(54, 211, 54);
+	font-weight: bold;
+	right: 10px;
+	padding: 1rem;
+}
+
+@media (min-width: 768px) {
+	.admin__create {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto 1fr auto;
+	}
+	.admin__title {
+		grid-column: 1/3;
+		font-size: 4rem;
+	}
+
+	.form__title {
+		font-size: 2rem;
+	}
+
+	.form__input-default {
+		padding:2rem
+	}
+	.btn--create.link {
+		grid-row: 3/4;
+		grid-column: 1/3;
+
+	}
+
+	.admin__form {
+		width: 80%;
+	}
+}

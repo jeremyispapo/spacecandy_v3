@@ -4,6 +4,7 @@ import {RenderCandy} from '../../utils/renderCandy'
 import './Admin.css'
 
 export const Admin = ({candys,setCandys}) => {
+  const [msg, setMsg] = useState(false)
 
 	function createCandy({name,color,type,power,price}) {
 		const newCandy = {
@@ -19,6 +20,7 @@ export const Admin = ({candys,setCandys}) => {
     setNombreCandy('')
     setPowerCandy('')
     setPriceCandy('')
+    setMsg(true)
 	}
 
 
@@ -33,6 +35,11 @@ export const Admin = ({candys,setCandys}) => {
       <div className="admin__wrapper">
         <section className="admin__create">
           <h2 className="admin__title">🚧 Crear Caramelo 🚧</h2>
+          {
+            msg ? 
+              <div className="msg">✅ Se creo un Caramelo nuevo </div>
+            : null
+          }
           <form className="admin__form form">
             <label className="form__section" htmlFor="namecandy">
               <h3 className="form__title">Nombre: {nombreCandy}</h3>
@@ -102,14 +109,13 @@ export const Admin = ({candys,setCandys}) => {
                 });
               }}
             />
-
+          </form>
             <div className="preview__candy">
               <RenderCandy type={typeCandy} color={colorCandy} />
             </div>
             <Link className="btn--create link" to="/store">
               Ir a la Tienda
             </Link>
-          </form>
         </section>
       </div>
     </main>

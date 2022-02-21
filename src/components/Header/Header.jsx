@@ -11,9 +11,6 @@ function Header() {
 				SpaceCandy
 				</Link>
 				</h1>
-		<Link to="/create-candy">
-		Ir a crear
-		</Link>
 			<div className="carrito">
 				🛒
 			</div>
