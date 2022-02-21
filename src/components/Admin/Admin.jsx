@@ -15,7 +15,10 @@ export const Admin = ({candys,setCandys}) => {
 		}
 		candys.push(newCandy)
 		setCandys(candys)
-		console.log(candys)
+		// console.log(candys)
+    setNombreCandy('')
+    setPowerCandy('')
+    setPriceCandy('')
 	}
 
 
