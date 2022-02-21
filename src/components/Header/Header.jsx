@@ -1,8 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
+import {Modal} from '../Modal/Modal'
 import {Route , Link } from 'react-router-dom'
 import './Header.css'
 
-function Header() {
+function Header({carrito}) {
+	const [modal, setModal] = useState(false)
   return (
 	<header className="header">
 		<nav className="navbar">
@@ -11,10 +13,15 @@ function Header() {
 				SpaceCandy
 				</Link>
 				</h1>
-			<div className="carrito">
+			<div className="carrito"
+				onClick={() => setModal(!modal)}
+			>
 				🛒
 			</div>
 		</nav>
+		{
+			modal ? <Modal carrito={carrito} /> : null
+		}
 	</header>
   )
 }

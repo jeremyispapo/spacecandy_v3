@@ -9,11 +9,15 @@ import './App.css'
 
 function App() {
 	const [candys, setCandys] = useState([])
+	const [carrito, setCarrito] = useState([])
 	
 		return (
 		<>
 			<BrowserRouter>
-				<Header />
+				<Header 
+					carrito={carrito}
+					setCarrito={setCarrito}
+				/>
 				<Routes>
 					<Route path="/" element={ <Hero/> } />
 					<Route path="/create-candy" element={ 
@@ -27,6 +31,8 @@ function App() {
 						<Store 
 						candys={candys}
 						setCandys={setCandys}
+						carrito={carrito}
+						setCarrito={setCarrito}
 						/>
 					} />
 				</Routes>

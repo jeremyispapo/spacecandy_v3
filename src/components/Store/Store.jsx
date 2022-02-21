@@ -2,7 +2,7 @@ import React from 'react'
 import './Store.css'
 import {Card} from '../Card/Card'
 
-export const Store = ({candys}) => {
+export const Store = ({candys, setCarrito}) => {
 
   return (
 	<main className='store'>
@@ -15,7 +15,9 @@ export const Store = ({candys}) => {
 						desc={candy.power}
 						color={candy.color}
 						type={candy.type}
-						key={i} />
+						key={i}
+						setCarrito={setCarrito}
+						/>
 				))
 			}
 			{/* <Card title={'hola'}/> */}
