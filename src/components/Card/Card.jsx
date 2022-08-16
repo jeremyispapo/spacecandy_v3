@@ -8,9 +8,8 @@ export const Card = ({type,color, price, title, desc,setCarrito, carrito}) => {
       title,
       price,
     }
-    carrito.push(newCar)
-    setCarrito(carrito)
-    console.log(carrito)
+    const newList = [...carrito,newCar]
+    setCarrito(newList)
   }
 
   return (
