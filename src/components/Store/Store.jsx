@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Store.css'
 import {Card} from '../Card/Card'
+import { Context } from '../../context/Context'
 
-export const Store = ({candys, setCarrito,carrito}) => {
-
+export const Store = () => {
+	const {candys} = useContext(Context)
   return (
 	<main className='store'>
 		<div className="store__wrapper">
@@ -16,12 +17,9 @@ export const Store = ({candys, setCarrito,carrito}) => {
 						color={candy.color}
 						type={candy.type}
 						key={i}
-						carrito={carrito}
-						setCarrito={setCarrito}
 						/>
 				))
 			}
-			{/* <Card title={'hola'}/> */}
 			
 		</div>
 	</main>

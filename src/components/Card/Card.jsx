@@ -1,8 +1,10 @@
-import React from "react";
+import React,{useContext} from "react";
+import { Context } from "../../context/Context";
 import {RenderCandy} from '../../utils/renderCandy'
 import './Card.css'
 
-export const Card = ({type,color, price, title, desc,setCarrito, carrito}) => {
+export const Card = ({type,color, price, title, desc}) => {
+  const {carrito,setCarrito} = useContext(Context)
   function addCar() {
     let newCar = {
       title,

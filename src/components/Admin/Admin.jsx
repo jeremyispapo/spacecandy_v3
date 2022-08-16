@@ -1,9 +1,12 @@
-import React, {useState} from 'react'
+import React, {useState,useContext} from 'react'
 import { Link } from 'react-router-dom'
+import { Context } from '../../context/Context'
 import {RenderCandy} from '../../utils/renderCandy'
 import './Admin.css'
 
-export const Admin = ({candys,setCandys}) => {
+export const Admin = () => {
+  const {candys,setCandys} = useContext(Context)
+
   const [msg, setMsg] = useState(false)
 
 	function createCandy({name,color,type,power,price}) {
@@ -14,9 +17,8 @@ export const Admin = ({candys,setCandys}) => {
 			power,
 			price
 		}
-		candys.push(newCandy)
-		setCandys(candys)
-		// console.log(candys)
+		const newList = [...candys,newCandy]
+		setCandys(newList)
     setNombreCandy('')
     setPowerCandy('')
     setPriceCandy('')

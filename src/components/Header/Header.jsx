@@ -1,9 +1,11 @@
-import React, {useState} from 'react'
+import React, {useState,useContext} from 'react'
 import {Modal} from '../Modal/Modal'
 import {Link } from 'react-router-dom'
 import './Header.css'
+import { Context } from '../../context/Context'
 
-function Header({carrito}) {
+function Header() {
+	const {carrito} = useContext(Context)
 	const [modal, setModal] = useState(false)
   return (
 	<header className="header">

@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import {Header} from './components/Header/Header'
 
@@ -8,32 +8,19 @@ import {Store} from './components/Store/Store'
 import './App.css'
 
 function App() {
-	const [candys, setCandys] = useState([])
-	const [carrito, setCarrito] = useState([])
 	
 		return (
 		<>
 			<BrowserRouter>
-				<Header 
-					carrito={carrito}
-					setCarrito={setCarrito}
-				/>
+				<Header/>
 				<Routes>
 					<Route path="/" element={ <Hero/> } />
 					<Route path="/create-candy" element={ 
 					
-						<Admin 
-						candys={candys} 
-						setCandys={setCandys}
-						/> 
+						<Admin/> 
 					} />
 					<Route path="/store" element={
-						<Store 
-						candys={candys}
-						setCandys={setCandys}
-						carrito={carrito}
-						setCarrito={setCarrito}
-						/>
+						<Store/>
 					} />
 				</Routes>
 			</BrowserRouter>
