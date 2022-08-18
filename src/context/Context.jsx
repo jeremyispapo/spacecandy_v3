@@ -9,8 +9,6 @@ export const ContextProvider = ({ children }) => {
 
 
   function deleteCarrito(id) {
-    console.table(carrito)
-    console.log(id)
     const newList = carrito.filter((_,index) => index !== id);
     setCarrito(newList);
   }

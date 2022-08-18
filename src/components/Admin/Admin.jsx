@@ -30,7 +30,7 @@ export const Admin = () => {
 	const [colorCandy, setColorCandy] = useState('')
 	const [typeCandy, setTypeCandy] = useState('0')
 	const [powerCandy, setPowerCandy] = useState('')
-	const [priceCandy, setPriceCandy] = useState('')
+	const [priceCandy, setPriceCandy] = useState(0)
 
   return (
     <main className="admin">
@@ -94,7 +94,7 @@ export const Admin = () => {
                 className="form__input-default"
                 type="text"
                 id="pricecandy"
-                onChange={(e) => setPriceCandy(e.target.value)}
+                onChange={(e) => setPriceCandy(Number(e.target.value))}
               />
             </label>
             <input

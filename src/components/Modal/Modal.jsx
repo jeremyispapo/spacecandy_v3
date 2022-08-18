@@ -6,6 +6,7 @@ import './Modal.css'
 
 export const Modal = () => {
   const {carrito} = useContext(Context)
+  const total = carrito.reduce((acumulador,{price})=> acumulador + price,0)
   return (
 	<div className="modal">
 		<h2 className="modal__title">Carrito de Compra:</h2>
@@ -19,6 +20,11 @@ export const Modal = () => {
 			{
 				carrito.length === 0 ? "No hay elementos" : null
 			}
+			{
+
+				carrito.length === 0 ? null : <li className='modal__results'> Total a pagar: {total} </li>
+			}
+
 		</ul>
 	</div>
   )

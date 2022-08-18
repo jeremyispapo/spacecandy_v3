@@ -12,6 +12,25 @@
 	font-size: 1.8rem;
 }
 
+.modal__content {
+	max-height: 40.5rem;
+	overflow-y: scroll;
+	position: relative;
+}
+
+.modal__results {
+	list-style: none;
+	font-size: 1.4rem;
+	margin:1rem;
+	background-color: #000;
+	color: #fff;
+	padding: 1rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	position: sticky;
+	bottom: 1rem;
+}
+
 @media (min-width: 768px) {
 	.modal {
 		width: 24rem;
