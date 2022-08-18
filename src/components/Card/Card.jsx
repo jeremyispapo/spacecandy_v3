@@ -9,6 +9,8 @@ export const Card = ({type,color, price, title, desc}) => {
     let newCar = {
       title,
       price,
+      type,
+      color
     }
     const newList = [...carrito,newCar]
     setCarrito(newList)

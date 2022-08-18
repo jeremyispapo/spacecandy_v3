@@ -16,6 +16,7 @@ export const Store = () => {
 						desc={candy.power}
 						color={candy.color}
 						type={candy.type}
+						id={candy.id}
 						key={i}
 						/>
 				))
